@@ -7,8 +7,9 @@
  * in the user manual at https://docs.gradle.org/5.2.1/userguide/multi_project_builds.html
  */
 
-rootProject.name = 'Java'
+rootProject.name = 'java-examples'
 
 include 'jaxb'
 include 'java8'
 include 'design-patterns'
+include 'annotations'
