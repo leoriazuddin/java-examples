@@ -9,7 +9,6 @@
 
 rootProject.name = 'java-examples'
 
-include 'jaxb'
 include 'java8'
 include 'design-patterns'
 include 'annotations'
