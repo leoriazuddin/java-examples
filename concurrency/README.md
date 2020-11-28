@@ -1,4 +1,5 @@
 Concurrency tutorials in order:
+- SynchronizedExample
 - ThreadPoolExample
 - CountdownLatchExample
 - ProducerConsumerExample
