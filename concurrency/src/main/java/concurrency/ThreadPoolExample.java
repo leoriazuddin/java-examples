@@ -15,6 +15,7 @@ public class ThreadPoolExample {
         service.shutdown();
         System.out.println("All submitted...");
 
+
         service.awaitTermination(1, TimeUnit.DAYS);
         System.out.println("All done...");
     }
