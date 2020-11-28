@@ -9,6 +9,6 @@
 
 rootProject.name = 'java-examples'
 
-include 'java8'
 include 'design-patterns'
 include 'annotations'
+include 'concurrency'
