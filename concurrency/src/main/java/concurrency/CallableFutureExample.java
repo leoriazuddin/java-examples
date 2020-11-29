@@ -8,7 +8,7 @@ public class CallableFutureExample {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
         ExecutorService service = Executors.newCachedThreadPool();
-        Future<Integer> future = service.submit((Callable<Integer>) () -> {
+        Future<Integer> future = service.submit(() -> {
             Random r = new Random();
             int duration = r.nextInt(4000);
 

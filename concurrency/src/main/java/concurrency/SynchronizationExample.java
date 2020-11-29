@@ -9,8 +9,7 @@ import java.util.Random;
 public class SynchronizationExample {
 
     private LinkedList<Integer> list = new LinkedList<>();
-    private final int LIMIT = 10;
-    Object lock = new Object();
+    final Object lock = new Object();
 
     public static void main(String[] args) throws Exception {
         SynchronizationExample r = new SynchronizationExample();
@@ -40,6 +39,7 @@ public class SynchronizationExample {
         while (true) {
             synchronized (lock) {
                 //list is full, wait for items to be consumed
+                int LIMIT = 10;
                 while (list.size() == LIMIT) {
                     lock.wait();
                 }
