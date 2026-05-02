@@ -1,0 +1,20 @@
+#!/usr/bin/env -S java --source 25
+
+/**
+ * Running instructions:
+ * 1. chmod +x word_counter
+ * 2. ./word_counter word
+ */
+void main(String ...args) {
+    var word = args[0];
+    var text = "Hello world! This is a simple word counter. word Word WORD.";
+    
+    if (text == null || text.isEmpty()) {
+         System.out.println("Number of words: " + 0);
+    }
+    
+    var wordCount = new Scanner(text).tokens().map(String::toLowerCase)
+    .filter(w -> w.contains(word)).count();
+    
+    System.out.println("Number of words: " + wordCount);
+}
